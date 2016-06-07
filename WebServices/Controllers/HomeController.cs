@@ -11,10 +11,10 @@ namespace WebServices.Controllers {
         private ReservationRepository repo = ReservationRepository.Current;
 
         public ViewResult Index() {
-            return View(repo.GetAll());
+            return View();
         }
 
-        public ActionResult Add(Reservation item) {
+        /*public ActionResult Add(Reservation item) {
             if (ModelState.IsValid) {
                 repo.Add(item);
                 return RedirectToAction("Index");
@@ -34,6 +34,6 @@ namespace WebServices.Controllers {
             } else {
                 return View("Index");
             }
-        }
+        }*/
     }
 }
