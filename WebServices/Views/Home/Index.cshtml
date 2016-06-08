@@ -25,7 +25,6 @@
         }
 
         function getAllItems() {
-            return;
             sendAjaxRequest("GET", function (data) {
                 model.reservations.removeAll();
                 for (var i = 0; i < data.length; i++) {
